@@ -1,0 +1,66 @@
+//Colores
+$color-primary: #333333;
+$color-secondary: #666666;
+$color-accent: #054C73;
+$color-footer: #03344F;
+$color-white: #ffffff;
+$color-bg-light: #F2F5FF;
+
+
+
+//Tipografia
+$font-main: "Montserrat", sans-serif;
+$font-size-nav: 14px;
+$font-size-small: 16px;
+$font-size-p: 20px;
+$font-size-h3: 24px;
+$font-size-h2: 32px;
+
+@mixin text-style( 
+
+    $size,
+    $color,
+    $weight: 400
+) 
+
+{
+    font-size: $size;
+    color: $color;
+    font-weight: $weight;
+}
+
+//Contenedores
+$container-width: 1200px;
+$container-small-width: 500px;
+
+@mixin container($width) {
+    width: $width;
+    margin: 0 auto;
+}
+
+
+
+//Espaciados
+$section-spacing-sm: 40px;
+$section-spacing-md: 60px;
+
+$margin-title: 20px;
+
+
+
+//boton
+@mixin button($bg, $padding) {
+    background-color: $bg;
+    color: $color-white;
+    padding: $padding;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+
+
+//Padding verticales
+@mixin section-padding($padding) {
+    padding: $padding 0;
+}

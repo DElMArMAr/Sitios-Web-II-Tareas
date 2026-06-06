@@ -1,0 +1,32 @@
+/* Helper */
+.container {
+    @include container($container-width);
+}
+
+.container-small {
+    @include container($container-small-width);
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.btn {
+    @include button($color-accent, 24px 10px);
+    font-size: $font-size-small;
+    font-weight: 500;
+}
+
+.btn.big {
+    padding: 24px 57px;
+}
+
+.bg-light {
+    background-color: $color-bg-light;
+}
+
+.space-wrapper {
+    @include section-padding($section-spacing-md);
+}

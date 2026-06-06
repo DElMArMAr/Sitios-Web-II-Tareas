@@ -1,0 +1,19 @@
+/* Form */
+form {
+    margin-top: 50px;
+}
+
+input[type="email"] {
+    height: 63px;
+    border: 1px solid $color-accent;
+    float: left;
+    width: 323px;
+    padding-left: 10px;
+}
+
+input[type="submit"] {
+    width: 154px;
+    float: left;
+    border: none;
+    text-transform: capitalize;
+}

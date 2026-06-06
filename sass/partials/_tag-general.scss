@@ -1,0 +1,25 @@
+/* Estilos Generales / Globales */
+body {
+    font-family: $font-main;
+}
+
+h2 {
+    @include text-style($font-size-h2, $color-primary);
+    margin: 0;
+    margin-bottom: $margin-title;
+}
+
+h3 {
+    @include text-style($font-size-h3, $color-primary, 500);
+    margin: 0;
+}
+
+p {
+    @include text-style($font-size-p, $color-secondary);
+    line-height: 39px;
+    margin: 0;
+}
+
+p.small {
+    @include text-style($font-size-small, $color-primary);
+}
